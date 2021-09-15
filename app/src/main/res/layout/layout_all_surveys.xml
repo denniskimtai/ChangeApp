@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFA000">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="5"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leadership"
+                    android:background="@drawable/tag_rectangle"
+                    android:layout_marginRight="10dp"/>
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Politics"
+                    android:background="@drawable/tag_rectangle"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="25dp"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/surveyImage"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/political" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Survey"
+                        android:drawableLeft="@drawable/ic_survey"
+                        android:drawableTint="@color/light_grey"
+                        android:drawablePadding="5dp"
+                        android:textSize="17dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/primary"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/surveyTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Political Strategy Study"
+                        android:textSize="20dp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/primary_dark"
+                        android:textStyle="bold"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/surveyShortDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Take this study and benchmark the current ranking of other politicians in the area"
+                android:textSize="14dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/light_grey"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="18 Questions"
+                android:drawableLeft="@drawable/ic_questions"
+                android:drawableTint="@color/light_grey"
+                android:drawablePadding="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:textSize="13dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/primary_dark"/>
+
+            <Button
+                android:id="@+id/btn_take_survey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Take Survey (+180 points)"
+                android:textAllCaps="false"
+                android:textColor="@color/white_background"
+                android:background="@drawable/button_background_rectangle"
+                android:layout_marginTop="15dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

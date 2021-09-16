@@ -26,6 +26,9 @@
                 android:layout_centerInParent="true"
                 android:fontFamily="sans-serif"
                 android:text="Dashboard"
+                android:drawableLeft="@drawable/ic_dashboard"
+                android:drawableTint="@color/light_grey"
+                android:drawablePadding="5dp"
                 android:textColor="@color/primary_dark"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -34,7 +37,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
-                android:src="@drawable/ic_profile" />
+                android:src="@drawable/ic_circle_profile" />
 
         </RelativeLayout>
 

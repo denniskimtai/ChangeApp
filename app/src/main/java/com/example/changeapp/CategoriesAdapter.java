@@ -1,6 +1,7 @@
 package com.example.changeapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -53,6 +54,16 @@ public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.Ca
         holder.imageView.setImageDrawable(mCtx.getResources().getDrawable(categories.getIcon()));
 
         holder.linearLayout.setBackgroundColor(ContextCompat.getColor(mCtx, categories.getBackgroundColor()));
+
+        holder.imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(mCtx, SurveysActivity.class);
+                mCtx.startActivity(intent);
+
+            }
+        });
 
         if (position == 0){
             holder.imageView.setColorFilter(ContextCompat.getColor(mCtx, R.color.purple_700), android.graphics.PorterDuff.Mode.SRC_IN);

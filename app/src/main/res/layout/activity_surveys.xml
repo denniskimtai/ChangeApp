@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".QuestionsActivity"
+    tools:context=".SurveysActivity"
     android:orientation="vertical">
 
     <androidx.appcompat.widget.Toolbar
@@ -24,11 +24,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:fontFamily="sans-serif"
-                android:text="Survey"
-                android:drawableLeft="@drawable/ic_survey"
+                android:drawableLeft="@drawable/ic_health"
                 android:drawablePadding="5dp"
                 android:drawableTint="@color/light_grey"
+                android:fontFamily="sans-serif"
+                android:text="Health"
                 android:textColor="@color/primary_dark"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -37,16 +37,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
-                android:src="@drawable/ic_arrow_back" />
+                android:src="@drawable/ic_arrow_back"
+                app:tint="@color/primary_dark" />
 
         </RelativeLayout>
 
     </androidx.appcompat.widget.Toolbar>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/questionsRecyclerView"
+        android:id="@+id/allSurveysRecyclerView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_margin="12dp"/>
 
 </LinearLayout>

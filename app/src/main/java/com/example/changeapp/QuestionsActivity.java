@@ -20,6 +20,7 @@ public class QuestionsActivity extends AppCompatActivity {
 
         questionsRecyclerView = findViewById(R.id.questionsRecyclerView);
 
+        questionsRecyclerView.setHasFixedSize(true);
         LinearLayoutManager recyclerLayoutManager = new LinearLayoutManager(this);
         questionsRecyclerView.setLayoutManager(recyclerLayoutManager);
 

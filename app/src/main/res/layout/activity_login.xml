@@ -99,7 +99,7 @@
 
     <Button
         android:layout_below="@id/txt_forgot_password"
-        android:id="@+id/btn_take_survey"
+        android:id="@+id/btn_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Login"
